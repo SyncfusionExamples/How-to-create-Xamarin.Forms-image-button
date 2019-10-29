@@ -17,11 +17,11 @@ You can create an image button by using the ImageSource property which is used t
 Content property in our button is used to add any content view inside the button. By using this property you can create an image button with Image. The following code example shows how to instantiate an image button using Content.
  
 <button:SfButton BackgroundColor="DeepSkyBlue" CornerRadius="5" HeightRequest="45" WidthRequest="95">
-       <button:SfButton.Content>
-             <Grid  Margin="5">
-                  <Image Source="alarm.png" />
-              </Grid>
-       </button:SfButton.Content>
+<button:SfButton.Content>
+<Grid  Margin="5">
+<Image Source="alarm.png" />
+</Grid>
+</button:SfButton.Content>
 </button:SfButton>
 
 ## <a name="textbutton"></a>Create image button with text content
