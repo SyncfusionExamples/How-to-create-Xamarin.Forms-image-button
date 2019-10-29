@@ -5,7 +5,7 @@ Please refer KB links for more details,
 
 [How to create Xamarin.Forms image button](https://www.syncfusion.com/kb/10808/?utm_medium=listing&utm_source=github-examples)
 
-## <a name="imagebutton"></a>Create image button with ImageSource##
+## <a name="imagebutton"></a>Create image button with ImageSource
 
 You can create an image button by using the ImageSource property which is used to set the image in button. In additional, you have to set ShowIcon property value as true. The following code example shows how to instantiate an image button using ImageSource.
  
@@ -13,7 +13,7 @@ You can create an image button by using the ImageSource property which is used t
                          HeightRequest="50" WidthRequest="45" CornerRadius="5" ImageSource="alarm.png"/>
 
 
-## <a name="imageContentbutton"></a>Create image button with content##
+## <a name="imageContentbutton"></a>Create image button with content
 Content property in our button is used to add any content view inside the button. By using this property you can create an image button with Image. The following code example shows how to instantiate an image button using Content.
  
 <button:SfButton BackgroundColor="DeepSkyBlue" CornerRadius="5" >
@@ -24,7 +24,7 @@ Content property in our button is used to add any content view inside the button
        </button:SfButton.Content>
 </button:SfButton>
 
-## <a name="textimagebutton"></a>Create image button with text content ##
+## <a name="textbutton"></a>Create image button with text content
 
 You can also create an image button with text content and image by using Text and ImageSource properties. The following code example shows how to create an image button with text content and image.
  
@@ -33,7 +33,7 @@ You can also create an image button with text content and image by using Text an
                  ShowIcon="True" BackgroundColor="DeepSkyBlue" Text="Alarm"
                  CornerRadius="5" >
  
-## <a name="troubleshooting"></a>Troubleshooting ##ImageButton with TextContent and Image
+## <a name="textimagebutton"></a>ImageButton with TextContent and Image
 You can also able to change the image alignment in button by using ImageAlignment property as per below code example.
  
 <button:SfButton ImageSource="alarm.png" ImageAlignment="End"
