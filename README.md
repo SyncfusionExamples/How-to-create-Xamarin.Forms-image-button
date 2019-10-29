@@ -9,9 +9,12 @@ Please refer KB links for more details,
 
 You can create an image button by using the ImageSource property which is used to set the image in button. In additional, you have to set ShowIcon property value as true. The following code example shows how to instantiate an image button using ImageSource.
  
+ ```
+ 
  <button:SfButton ShowIcon="True" BackgroundColor="DeepSkyBlue" 
                          HeightRequest="50" WidthRequest="95" CornerRadius="5" ImageSource="alarm.png"/>
 
+```
 
 ## <a name="imageContentbutton"></a>Create image button with content
 Content property in our button is used to add any content view inside the button. By using this property you can create an image button with Image. The following code example shows how to instantiate an image button using Content.
@@ -31,17 +34,25 @@ Content property in our button is used to add any content view inside the button
 
 You can also create an image button with text content and image by using Text and ImageSource properties. The following code example shows how to create an image button with text content and image.
  
+ ```
+ 
 <button:SfButton ImageSource="alarm.png"
                  HeightRequest="50" WidthRequest="95"  TextColor="Black"
                  ShowIcon="True" BackgroundColor="DeepSkyBlue" Text="Alarm"
                  CornerRadius="5" />
  
+ ```
+ 
 ## <a name="textimagebutton"></a>ImageButton with TextContent and Image
 You can also able to change the image alignment in button by using ImageAlignment property as per below code example.
+ 
+ ```
  
 <button:SfButton ImageSource="alarm.png" ImageAlignment="End" HeightRequest="45" WidthRequest="95"
                  TextColor="Black" ShowIcon="True" BackgroundColor="DeepSkyBlue"                 
                  Text="Alarm" CornerRadius="5" />
+ 
+ ```
  
 See Also:
  
