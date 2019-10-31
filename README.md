@@ -7,7 +7,9 @@ Please refer KB links for more details,
 
 ## <a name="imagebutton"></a>Create image button with ImageSource
 
-You can create an image button by using the ImageSource property which is used to set the image in button. In additional, you have to set ShowIcon property value as true. The following code example shows how to instantiate an image button using ImageSource.
+You can create an image button by using the ImageSource property that is used to set the image in button. In addition, you have to set the value of the ShowIcon property as true. 
+
+The following code example shows how to use ImageSource to instantiate an image button.
  
  ```
  
@@ -17,7 +19,9 @@ You can create an image button by using the ImageSource property which is used t
 ```
 
 ## <a name="imageContentbutton"></a>Create image button with content
-Content property in our button is used to add any content view inside the button. By using this property you can create an image button with Image. The following code example shows how to instantiate an image button using Content.
+The Content property on our button is used to add any content view inside the button. You can use the Content property to create an image button.
+
+The following code example shows how to use Content to instantiate an image button.
  
  ```
 <button:SfButton BackgroundColor="DeepSkyBlue" CornerRadius="5" HeightRequest="45" WidthRequest="95">
@@ -32,7 +36,9 @@ Content property in our button is used to add any content view inside the button
 
 ## <a name="textbutton"></a>Create image button with text content
 
-You can also create an image button with text content and image by using Text and ImageSource properties. The following code example shows how to create an image button with text content and image.
+You can also create an image button with text using the properties Text and ImageSource. 
+
+The following code example shows how to create an image button with text and image.
  
  ```
  
@@ -44,7 +50,7 @@ You can also create an image button with text content and image by using Text an
  ```
  
 ## <a name="textimagebutton"></a>ImageButton with TextContent and Image
-You can also able to change the image alignment in button by using ImageAlignment property as per below code example.
+You can also change the alignment of the image in the button using the ImageAlignment property as shown in the example below.
  
  ```
  
