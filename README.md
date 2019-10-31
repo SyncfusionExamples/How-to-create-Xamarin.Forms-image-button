@@ -19,7 +19,7 @@ The following code example shows how to use ImageSource to instantiate an image 
 ```
 
 ## <a name="imageContentbutton"></a>Create image button with content
-The Content property on our button is used to add any content view inside the button. You can use the Content property to create an image button.
+The Content property on our button is used to add any content view inside the button. You can use this Content property to create an image button.
 
 The following code example shows how to use Content to instantiate an image button.
  
