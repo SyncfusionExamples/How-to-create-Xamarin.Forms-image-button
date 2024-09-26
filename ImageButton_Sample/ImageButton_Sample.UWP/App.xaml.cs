@@ -1,10 +1,7 @@
-﻿using Syncfusion.XForms.UWP.Border;
-using Syncfusion.XForms.UWP.Buttons;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -42,7 +39,12 @@ namespace ImageButton_Sample.UWP
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-
+#if DEBUG
+            if (System.Diagnostics.Debugger.IsAttached)
+            {
+                this.DebugSettings.EnableFrameRateCounter = true;
+            }
+#endif
 
             Frame rootFrame = Window.Current.Content as Frame;
 
@@ -55,12 +57,7 @@ namespace ImageButton_Sample.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                List<Assembly> assembliesToInclude = new List<Assembly>();
-                //Now, add all the assemblies that your app uses 
-                assembliesToInclude.Add(typeof(SfButtonRenderer).GetTypeInfo().Assembly);
-                assembliesToInclude.Add(typeof(SfBorderRenderer).GetTypeInfo().Assembly);
-
-                Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+                Xamarin.Forms.Forms.Init(e);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
